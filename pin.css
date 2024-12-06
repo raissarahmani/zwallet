@@ -4,19 +4,16 @@
 }
 
 .container {
+    display: flex;
+    flex-direction: row;
     background-color: #2948FF;
 }
 
-.box {
+.text {
     background-color: #FFFFFF;
-    width: 35vw;
-    height: 45vh;
-    border: 1px solid #FFFFFF;
-    border-radius: 20px;
-    padding: 10vh 4vw 15vh 4vw;
-    position: absolute;
-    top: 15%;
-    left: 30%;
+    width: 45%;
+    border-radius: 0 40px 40px 0;
+    padding: 15vh 5vw 15vh 5vw;
 }
 
 .line1 {
@@ -35,7 +32,7 @@
 }
 
 .line2 {
-    padding: 3vh 0;
+    padding: 2vh 0 2vh 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 500;
@@ -43,7 +40,7 @@
 }
 
 .line3 {
-    margin: 1vh 0 3vh 0;
+    margin: 0 0 1vh 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -51,44 +48,58 @@
     line-height: 26px;
 }
 
-.line6 label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+.line4 {
+    padding: 8vh 0 10vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pin1 {
+    font-size: 30px;
     font-weight: 500;
     color: #0B132A;
+    padding: 2vh 2vw;
+    border-bottom: 2px solid #2948FF;
 }
 
-.line6 input {
-    width: 82%;
-    border: 1px solid #DEDEDE;
-    border-radius: 8px;
-    background-color: #FCFDFE;
+.pin2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #0B132A;
+    padding: 2vh 2vw;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.line5 {
+    text-align: center;
     margin: 2vh 0;
-    padding: 2vh 3.5vw;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0.75px;
-    ::placeholder{
-        color: #4F5665;
-    }
+    color: #4F5665;
 }
 
-.email {
-    background-image: url(email.png);
-    background-repeat: no-repeat;
-    background-position: 3% 50%;
-}
-
-.line6 button {
+.line5 button {
     width: 100%;
     border: 1px solid #2948FF;
     border-radius: 6px;
     background-color: #2948FF;
-    margin: 2vh 0;
     padding: 2vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: #FFFFFF;
+}
+
+.pic {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic img {
+    width: 40vw;
+    height: 80vh;
 }
