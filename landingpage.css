@@ -182,11 +182,30 @@ nav img {
 }
 
 .line2-2-1 {
-    background-color: black;
+    background-color: #2948FF;
     margin: 1vh;
-    padding: 2vh;
+    padding: 5vh 1vw;
     border: 1px solid #2948FF;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-img {
+    width: 4vw;
+    height:8.5vh;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
 }
 
 .text2title {
@@ -248,15 +267,29 @@ nav img {
     padding: 0 0 3vh 0;
 }
 
-.line3-3, .line3-4, .line3-5 {
+.line3-3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url(Ellipse\ 2.png);
-    background-repeat: no-repeat;
-    background-position: left;
+    justify-content: space-between;
     height: 10vh;
-    padding: 2vh 1.2vw;
+    padding: 2vh 0;
+}
+
+.line3-3image {
+    width: 6vw;
+    height: 9vh;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line3-3image img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
 }
 
 .text3title {
@@ -272,7 +305,7 @@ nav img {
     font-size: 16px;
     font-weight: 400;
     color:#FFFFFF;
-    padding: 0 3vw;
+    margin: 0 3vw;
 }
 
 .text3 button {
@@ -323,11 +356,22 @@ nav img {
     border: 1px solid #E8E8E84D;
     border-radius: 8px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container4-2-1 img {
-    width: 4vw;
-    height: 10vh;
+.container-pic {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .line4-2name {
@@ -342,9 +386,8 @@ nav img {
 .text4-2rate {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 2vw;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -354,6 +397,11 @@ nav img {
 .text4-2rate img{
     width:1vw;
     height:2vh;
+    margin: 0 0.5vw;
+}
+
+.text4-2rate p {
+    margin: 0 1vw;
 }
 
 .line4-2 {
@@ -456,9 +504,7 @@ nav img {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.75px;
-    ::placeholder{
-        color: #4F5665;
-    }
+    color: #4F5665;
 }
 
 .newsletter button {

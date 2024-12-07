@@ -147,7 +147,7 @@ aside {
     align-items: center;
     justify-content: space-between;
     padding: 6vh 1vw;
-    width: 60%;
+    width: 80%;
 }
 
 .text2-1, .text2-2 {
@@ -167,8 +167,10 @@ aside {
     font-weight: 400;
     letter-spacing: -0.6%;
     color: #FFFFFF;
-    text-align: center;
     margin: 0 0.5vw 0 0;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
 }
 
 .container2 {
@@ -181,8 +183,10 @@ aside {
     font-weight: 400;
     letter-spacing: -0.6%;
     color: #FFFFFF;
-    text-align: center;
     margin: 0 0.5vw 0 0;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
 }
 
 .line1 {
@@ -277,20 +281,16 @@ aside {
 
 .text4 {
     margin: 6vh 0 1vh 0;
-<<<<<<< HEAD
 }
 
 .text4 p {
     margin: 1vh 0 2vh 0;
-=======
->>>>>>> 1ba1b7aebd05e817d3d4b9a2b0369796a3743536
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #4F5665;
 }
 
-<<<<<<< HEAD
 .text4-1 input {
     background-image: url(money3.png);
     background-repeat: no-repeat;
@@ -314,36 +314,7 @@ aside {
     font-weight: 500;
     color: #4F5665;
     width: 96%;
-    
-=======
-.text4 p {
-    margin: 2vh 0;
-}
-
-.text4-1 {
-    border: 1px solid #E8E8E8;
-    border-radius: 6px;
-    padding: 4vh 1vw;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-}
-
-.text4-1 img {
-    margin: 0 1vw 0 0;
-}
-
-.text4-2 {
-    border: 1px solid #E8E8E8;
-    border-radius: 6px;
-    padding: 2vh 1vw;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    width: 96%;
-    height: 20vh;
->>>>>>> 1ba1b7aebd05e817d3d4b9a2b0369796a3743536
-}
+}    
 
 .text4 button {
     background-color: #2948FF;

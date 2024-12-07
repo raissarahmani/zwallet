@@ -128,10 +128,7 @@ aside {
     letter-spacing: -0.6%;
     color: #0B132A;
     border-left: 1px solid #E8E8E8;
-<<<<<<< HEAD
     z-index: 1;
-=======
->>>>>>> 1ba1b7aebd05e817d3d4b9a2b0369796a3743536
 }
 
 .text1 {
@@ -151,7 +148,7 @@ aside {
     align-items: center;
     justify-content: space-between;
     padding: 6vh 1vw;
-    width: 60%;
+    width: 80%;
 }
 
 .text2-1, .text2-2 {
@@ -162,8 +159,8 @@ aside {
 }
 
 .container1 {
-    width: 24px;
-    height:24px;
+    width: 2vw;
+    height:4vh;
     border-radius: 50%;
     background-color: #2948FF;
     font-family: 'Montserrat', sans-serif;
@@ -171,8 +168,10 @@ aside {
     font-weight: 400;
     letter-spacing: -0.6%;
     color: #FFFFFF;
-    text-align: center;
     margin: 0 0.5vw 0 0;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
 }
 
 .container2 {
@@ -185,8 +184,10 @@ aside {
     font-weight: 400;
     letter-spacing: -0.6%;
     color: #FFFFFF;
-    text-align: center;
     margin: 0 0.5vw 0 0;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
 }
 
 .line1 {
@@ -300,7 +301,6 @@ aside {
     color: #4F5665;
     text-align: center;
     width: 50%
-<<<<<<< HEAD
 }
 
 .dropdown {
@@ -349,6 +349,4 @@ aside {
     margin: 0.5vh 0 0 0;
     padding: 2vh 1vw;
     border-radius: 6px;
-=======
->>>>>>> 1ba1b7aebd05e817d3d4b9a2b0369796a3743536
 }

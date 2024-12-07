@@ -59,11 +59,13 @@
     font-size: 18px;
     font-weight: 500;
     color: #4F5665;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .line4 img {
-    margin: 0 2vw 0 2vw;
+    margin: 0 2vw 0 0;
 }
 
 .line5 {
@@ -94,9 +96,7 @@
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.75px;
-    ::placeholder{
-        color: #4F5665;
-    }
+    color: #4F5665;
 }
 
 .email {
@@ -106,9 +106,9 @@
 }
 
 .pass {
-    background-image: url(Password.png);
+    background-image: url(Password.png), url(EyeSlash.png);
     background-repeat: no-repeat;
-    background-position: 3% 50%;
+    background-position: 3% 50%, 97% 50%;
 }
 
 .line6 button {
