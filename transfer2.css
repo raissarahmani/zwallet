@@ -150,11 +150,22 @@ aside {
     width: 80%;
 }
 
-.text2-1, .text2-2 {
+.text2-1, .text2-2, .text2-3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 30%;
+    position: relative;
+}
+
+.text2-1::after, .text2-2::after {
+    content:"";
+    position: absolute;
+    right:0;
+    top: 50%;
+    width:6vw;
+    height:1vh;
+    border-top: 1px dashed #4F5665;
 }
 
 .container1 {

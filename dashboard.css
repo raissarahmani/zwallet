@@ -273,16 +273,15 @@ aside {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    height: 300px; /* The height of the chart */
-    border: 1px solid #E8E8E8;
-    margin: 5vh 0;
+    height: 52vh;
+    margin: 5vh 0 10vh 0;
     position: relative;
 }
 
 .leftlabels {
     position: absolute;
     top: 0;
-    left: -60px; /* Space for labels on the left */
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -290,8 +289,22 @@ aside {
     width: 10%;
 }
 
-.leftlabel {
-    font-family: 'Montserrat', sans-serif;
+.stroke {
+    position: relative;
+}
+
+.stroke::after {
+    content:"";
+    position: absolute;
+    left:100%;
+    top: 50%;
+    width:36vw;
+    height:1vh;
+    border-top: 1px solid #E8E8E8
+}
+
+.stroke p {
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 400;
     color: #0B132A;
@@ -301,67 +314,69 @@ aside {
 .bars {
     display: flex;
     align-items: flex-end;
+    justify-content: right;
     height: 100%;
     width: 90%;
+    padding: 0 0 0 6vw;
 }
 
 .bar1 {
-    width: 50px; /* Width of each bar */
+    width: 25%;
     background-color: #2948FF;
     display: inline-block;
-    position: relative; /* For positioning the label */
+    position: relative;
     height: 15%;
-    margin: 0 1vw;
+    margin: 0 0.5vw;
 }
 
 .bar2 {
-    width: 50px; /* Width of each bar */
+    width: 25%;
     background-color: #2948FF;
     display: inline-block;
-    position: relative; /* For positioning the label */
+    position: relative;
     height: 1%;
-    margin: 0 1vw;
+    margin: 0 0.5vw;
 }
 
 .bar3 {
-    width: 50px; /* Width of each bar */
+    width: 25%;
     background-color: #2948FF;
     display: inline-block;
-    position: relative; /* For positioning the label */
+    position: relative;
     height: 90%;
-    margin: 0 1vw;
+    margin: 0 0.5vw;
 }
 
 .bar4 {
-    width: 50px; /* Width of each bar */
+    width: 25%;
     background-color: #2948FF;
     display: inline-block;
-    position: relative; /* For positioning the label */
+    position: relative;
     height: 30%;
-    margin: 0 1vw;
+    margin: 0 0.5vw;
 }
 
 .bar5 {
-    width: 50px; /* Width of each bar */
+    width: 25%;
     background-color: #2948FF;
     display: inline-block;
-    position: relative; /* For positioning the label */
+    position: relative; 
     height: 40%;
-    margin: 0 1vw;
+    margin: 0 0.5vw;
 }
 
 .bar6 {
-    width: 50px; /* Width of each bar */
+    width: 25%;
     background-color: #2948FF;
     display: inline-block;
-    position: relative; /* For positioning the label */
+    position: relative; 
     height: 24%;
-    margin: 0 1vw;
+    margin: 0 0.5vw;
 }
 
 .bottomlabel {
     position: absolute;
-    bottom: -20px; /* Position label at the bottom */
+    bottom: -8vh;
     width: 100%;
     text-align: center;
     font-family: 'Montserrat', sans-serif;

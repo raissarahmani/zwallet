@@ -345,11 +345,27 @@ nav img {
 .text4-2 {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    overflow-x: scroll;
 }
 
 .container4-2-1 {
+    width: 13vw;
+    height: 8vh;
+    border-radius: 50%;
+    background-color: #E8E8E84D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container4-2-1 img, .container4-2-3 img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+}
+
+.container4-2-2 {
     background-color:#E8E8E84D;
     margin: 15vh 2vw;
     padding: 8vh 2vw;
@@ -419,6 +435,16 @@ nav img {
     font-weight: 400;
     color:#4F5665;
     text-align: center;
+}
+
+.container4-2-3 {
+    width: 13vw;
+    height: 8vh;
+    border-radius: 50%;
+    background-color: #2948FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutus {
