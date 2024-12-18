@@ -660,13 +660,15 @@
     }
 
     #gplay {
-        width: 3vw;
-        height: 7vh;
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
     }
 
     #apple {
-        width: 2vw;
-        height: 4vh;
+        width: 30%;
+        height: 30%;
+        object-fit: contain;
     }
 
     .pic1 {

@@ -51,30 +51,29 @@
     }
 
     .line4 {
-        padding: 8vh 0;
+        padding: 5vh 0;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
     }
 
-    .pin1 {
+    .line4 form {
+        width: 100%;
+    }
+
+    .pin {
+        width: 10%;
+        border: none;
         font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
+        font-size: 60px;
         font-weight: 500;
         color: #0B132A;
-        padding: 2vh 2vw;
-        border-bottom: 2px solid #2948FF;
+        margin: 0 0.5vw;
+        padding: 1vh 0.5vw;
+        text-align: center;
     }
-
-    .pin2 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
-        font-weight: 500; 
-        color: #0B132A;
-        padding: 2vh 2vw;
-        border-bottom: 2px solid #E8E8E8;
-    }
-
+ 
     .line5 {
         text-align: center;
         margin: 2vh 0;
@@ -114,20 +113,22 @@
 @media screen and (max-width: 769px) {
 
     .container {
-        display: flex;
-        flex-direction: row;
-        padding: 15vh 0;
+        padding: 5vh 0;
         background-color: #2948FF;
+        position: relative;
+        width: 100%;
+        height: 100vh;
     }
 
     .text {
         background-color: #FFFFFF;
-        width: 100%;
         border-radius: 20px;
-        padding: 18vh 5vw;
-        position: relative;
+        width: 80%;
+        padding: 8vh 5vw;
+        position: absolute;
         top: 50%;
-        left: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .line1 {
@@ -146,9 +147,9 @@
     }
 
     .line2 {
-        padding: 2vh 0 2vh 0;
+        padding: 2vh 0;
         font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 500;
         color:#0B132A;
     }
@@ -156,7 +157,7 @@
     .line3 {
         margin: 0 0 1vh 0;
         font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         color:#4F5665;
         line-height: 26px;
@@ -167,24 +168,23 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        text-align: center;
     }
 
-    .pin1 {
+    .line4 form {
+        width: 100%;
+    }
+
+    .pin {
+        width: 10%;
+        border: none;
         font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
+        font-size: 60px;
         font-weight: 500;
         color: #0B132A;
-        padding: 2vh 2vw;
-        border-bottom: 2px solid #2948FF;
-    }
-
-    .pin2 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
-        font-weight: 500; 
-        color: #0B132A;
-        padding: 2vh 2vw;
-        border-bottom: 2px solid #E8E8E8;
+        margin: 0 0.5vw;
+        padding: 1vh 0.5vw;
+        text-align: center;
     }
 
     .line5 {

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="register.js" defer></script>
     <title>Zwallet - Register</title>
 </head>
 <body class="container">
@@ -23,12 +24,12 @@
             Transferring money is easier than ever. You can access Zwallet wherever you are. Desktop, laptop, mobile phone? We cover all of that for you!
         </p>
         <div class="line4">
-            <button>
+            <button id="google">
                 <img src="google.png">
                 <p>Sign In With Google</p>
             </button>
-            <button>
-                <img src="facebook.png">
+            <button id="facebook">
+                <img src="facebook.png"> 
                 <p>Sign In With Facebook</p>
             </button>
         </div>
@@ -36,15 +37,27 @@
             Or
         </div>
         <div class="line6">
-            <form action="login.html" method="post">
+            <form action="login.html" method="post" id="loginEmail">
                 <label for="email">Email</label><br>
-                <input type="text" name="email" class="email" placeholder="Enter Your Email"><br>
+                <div class="inputs-email">
+                    <img src="email.png" class="icon">
+                    <input type="text" name="email" class="email" placeholder="Enter Your Email"> 
+                </div>
                 <label for="pass">Password</label><br>
-                <input type="password" name="pass" class="pass" placeholder="Enter Your Password"><br>
+                <div class="inputs-pass">
+                    <img src="Password.png" class="icon">
+                    <input type="password" name="pass" class="pass" placeholder="Enter Your Password"><br>
+                    <img src="EyeSlash.png" id="showPass">    
+                </div>
                 <label for="confirm">Confirm Password</label><br>
-                <input type="password" name="confirm" class="pass" placeholder="Enter Your Password Again"><br>
+                <div class="inputs-confirm">
+                    <img src="Password.png" class="icon">
+                    <input type="password" name="confirm" class="pass" placeholder="Enter Your Password Again"><br>
+                    <img src="EyeSlash.png" id="showConfirmPass">    
+                </div>
+                <p id="text" style="visibility:hidden">Register success</p>
+                <button type="button">Register</button>
             </form>
-            <button>Register</button>
         </div>
         <div class="line7">
             Have An Account? 

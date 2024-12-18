@@ -101,6 +101,10 @@
         border-top: 0.5px solid #DEDEDE;
     }
 
+    .line6 {
+        position: relative;
+    }
+
     .line6 label {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
@@ -108,7 +112,12 @@
         color: #0B132A;
     }
 
-    .line6 input {
+    .inputs-email, .inputs-pass {
+        position: relative;
+        width: 100%;
+    }
+
+    .email, .pass {
         width: 82%;
         border: 1px solid #DEDEDE;
         border-radius: 8px;
@@ -122,16 +131,26 @@
         color: #4F5665;
     }
 
-    .email {
-        background-image: url(email.png);
-        background-repeat: no-repeat;
-        background-position: 3% 50%;
+    .icon{
+        position: absolute;
+        left: 3%;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
-    .pass {
-        background-image: url(Password.png), url(EyeSlash.png);
-        background-repeat: no-repeat;
-        background-position: 3% 50%, 97% 50%;
+    #showPass{
+        position: absolute;
+        right: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .line6 p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500; 
+        margin: 2vh 0;
     }
 
     .line6 button {
@@ -270,14 +289,23 @@
         border-top: 0.5px solid #DEDEDE;
     }
     
+    .line6 {
+        position: relative;
+    }
+
     .line6 label {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         font-weight: 500;
         color: #0B132A;
     }
+
+    .inputs-email, .inputs-pass {
+        position: relative;
+        width: 100%;
+    }
     
-    .line6 input {
+    .email, .pass {
         width: 82%;
         border: 1px solid #DEDEDE;
         border-radius: 8px;
@@ -290,17 +318,19 @@
         letter-spacing: 0.75px;
         color: #4F5665;
     }
-    
-    .email {
-        background-image: url(email.png);
-        background-repeat: no-repeat;
-        background-position: 3% 50%;
+
+    .icon{
+        position: absolute;
+        left: 3%;
+        top: 50%;
+        transform: translateY(-50%);
     }
-    
-    .pass {
-        background-image: url(Password.png), url(EyeSlash.png);
-        background-repeat: no-repeat;
-        background-position: 3% 50%, 97% 50%;
+
+    #showPass{
+        position: absolute;
+        right: 3%;
+        top: 50%;
+        transform: translateY(-50%);
     }
     
     .line6 button {

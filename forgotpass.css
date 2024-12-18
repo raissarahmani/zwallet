@@ -58,9 +58,15 @@
         font-size: 16px;
         font-weight: 500;
         color: #0B132A;
+        margin-top: 3vh;
     }
 
-    .line6 input {
+    .inputs-email {
+        width: 100%;
+        position: relative;
+    }
+
+    .email {
         width: 82%;
         border: 1px solid #DEDEDE;
         border-radius: 8px;
@@ -74,10 +80,17 @@
         color: #4F5665;
     }
 
-    .email {
-        background-image: url(email.png);
-        background-repeat: no-repeat;
-        background-position: 3% 50%;
+    .inputs-email img {
+        position: absolute;
+        left: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .line6 p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
     }
 
     .line6 button {
@@ -98,19 +111,23 @@
 @media screen and (max-width: 769px) {
 
     .container {
+        padding: 5vh 0;
         background-color: #2948FF;
+        position: relative;
+        width: 100%;
+        height: 100vh;
     }
 
     .box {
         background-color: #FFFFFF;
-        width: 50vw;
-        height: 70vh;
+        width: 80%;
         border: 1px solid #FFFFFF;
         border-radius: 20px;
-        padding: 10vh 4vw 15vh 4vw;
+        padding: 8vh 5vw;
         position: absolute;
-        top: 15%;
-        left: 22%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
     }
 
     .line1 {
@@ -129,20 +146,25 @@
     }
 
     .line2 {
-        padding: 3vh 0;
+        padding: 2vh 0;
         font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 500;
         color:#0B132A;
     }
 
     .line3 {
-        margin: 1vh 0 3vh 0;
+        margin: 0 0 1vh 0;
         font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         color:#4F5665;
         line-height: 26px;
+    }
+
+    .line6 {
+        position: relative;
+        margin-top: 8vh;
     }
 
     .line6 label {
@@ -152,8 +174,13 @@
         color: #0B132A;
     }
 
-    .line6 input {
-        width: 70%;
+    .inputs-email {
+        width: 100%;
+        position: relative;
+    }
+
+    .email {
+        width: 82%;
         border: 1px solid #DEDEDE;
         border-radius: 8px;
         background-color: #FCFDFE;
@@ -166,10 +193,18 @@
         color: #4F5665;
     }
 
-    .email {
-        background-image: url(email.png);
-        background-repeat: no-repeat;
-        background-position: 3% 50%;
+    .icon {
+        position: absolute;
+        left: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .line6 p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500; 
+        margin: 2vh 0;
     }
 
     .line6 button {

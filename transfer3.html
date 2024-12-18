@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="transfer3.css">
+    <script src="transfer3.js" defer></script>
     <title>Zwallet - Transfer</title>
 </head>
 <body>
@@ -111,26 +112,35 @@
                     <button>Submit & Transfer</button>
                 </div>
             </div>
-        </section>
-        <section class="shadow"></section>
-        <section class="popup">
-            <div class="popup1">TRANSFER TO GHALUH 1</div>
-            <div class="popup2">
-                <div class="popup2-1">Enter Your Pin 👋</div>
-                <div class="popup2-2">Enter Your Pin For Transaction</div>
-                <div class="popup2-3">
-                    <p class="pin1">1</p>
-                    <p class="pin2"> </p>
-                    <p class="pin2"> </p> 
-                    <p class="pin2"> </p>
-                    <p class="pin2"> </p>
+            <section class="shadow"></section>
+            <section class="popup">
+                <div class="popup1">TRANSFER TO GHALUH 1</div>
+                <div class="popup2">
+                    <div class="popup2-1">Enter Your Pin 👋</div>
+                    <div class="popup2-2">Enter Your Pin For Transaction</div>
+                    <div class="popup2-3">
+                        <form action="pin.html" method="post">
+                            <label for="digit1" hidden></label>
+                            <input type="number" name="digit1" class="pin" placeholder="1">
+                            <label for="digit2" hidden></label>
+                            <input type="number" name="digit2" class="pin">
+                            <label for="digit3" hidden></label>
+                            <input type="number" name="digit3" class="pin">
+                            <label for="digit4" hidden></label>
+                            <input type="number" name="digit4" class="pin">
+                            <label for="digit5" hidden></label>
+                            <input type="number" name="digit5" class="pin">
+                            <label for="digit6" hidden></label>
+                            <input type="number" name="digit6" class="pin">
+                        </form>
+                    </div>
+                    <button>Next</button>
+                    <div class="popup2-4">
+                        Forgot Your Pin?
+                        <a href="forgotpass.html">Reset</a>
+                    </div>
                 </div>
-                <button>Next</button>
-                <div class="popup2-4">
-                    Forgot Your Pin?
-                    <a href="forgotpass.html">Reset</a>
-                </div>
-            </div>
+            </section>
         </section>
     </main>
 </body>

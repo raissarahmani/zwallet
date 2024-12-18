@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="forgotpass.js" defer></script>
     <title>Zwallet - Forgot Password</title>
 </head>
 <body class="container">
@@ -25,9 +26,13 @@
         <div class="line6">
             <form action="login.html" method="post">
                 <label for="email">Email</label><br>
-                <input type="text" name="email" class="email" placeholder="Enter Your Email"> 
+                <div class="inputs-email">
+                    <img src="email.png" class="icon">
+                    <input type="text" name="email" class="email" placeholder="Enter Your Email"> 
+                </div>
+                <p id="text" style="visibility: hidden">Enter registered email</p>
+                <button type="button">Submit</button>
             </form>
-            <button>Submit</button>
         </div>
     </main>
 </body>
