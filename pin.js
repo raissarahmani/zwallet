@@ -31,4 +31,5 @@ btnSubmit.addEventListener("click", (event) => {
     textMessage.style.visibility = "visible"
     textMessage.textContent = "Login success"
     textMessage.style.color = "green"
+    location.href = 'dashboard.html'
 })

@@ -33,7 +33,7 @@ btnLogin.addEventListener("click", (event) => {
         textMessage.style.visibility = "visible"
         textMessage.textContent = "Login success"
         textMessage.style.color = "green"
-        window.location.href = 'pin.html'
+        location.href = 'pin.html'
         return
     }
 

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
     <title>Zwallet - Dashboard</title>
 </head>
 <body>
@@ -18,7 +19,10 @@
             E-Wallet
         </nav>
         <div class="profile">
-            Ghaluh Wizard
+            <div>
+                <p id="greeting">Hello,</p>
+                <p id="name">Ghaluh Wizard</p>
+            </div>
             <div class="pp">
                 <img src="profile.png">
             </div>
@@ -27,23 +31,23 @@
     </header>
     <main>
         <aside>
-            <div class="option1">
+            <div class="option1" id="dashboard">
                 <img src="dashboard-two.png">
                 Dashboard
             </div>
-            <div class="option2">
+            <div class="option2" id="transfer">
                 <img src="Send.png">
                 Transfer
             </div>
-            <div class="option2">
+            <div class="option2" id="history">
                 <img src="history.png">
                 History
             </div>
-            <div class="option2">
+            <div class="option2" id="topup">
                 <img src="Upload.png">
                 Top Up
             </div>
-            <div class="option2">
+            <div class="option2" id="profile">
                 <img src="2 User.png">
                 Profile
             </div>
@@ -66,31 +70,31 @@
                         <p class="section1-time">3 Days Ago</p>
                     </div>
                 </div>
-                <div class="box1">
+                <div class="box2">
                     <div class="box1-1">
                         <img src="income.png">
                         <p class="section1-title">Income</p>
                     </div>
                     <p class="section1-money">Rp. 2.120.000</p>
-                    <div class="box1-2">
+                    <div class="box2-1">
                         <p class="section1-percent">+11.01%</p>
                         <img src="ArrowRise-s.png">
                     </div>
                 </div>
-                <div class="box2">
+                <div class="box3">
                     <div class="box1-1">
                         <img src="expense.png">
                         <p class="section1-title">Expense</p>
                     </div>
                     <p class="section1-money">Rp. 200.000</p>
-                    <div class="box2-1">
-                        <p class="section12-percent">-5.06%</p>
+                    <div class="box3-1">
+                        <p class="section3-percent">-5.06%</p>
                         <img src="ArrowDown-s.png">
                     </div>
                 </div>
             </div>
             <div class="section2">
-                Fast Service
+                <p>Fast Service</p>
                 <div class="button">
                     <button>
                         <div class="buttonpic">
@@ -107,7 +111,7 @@
                 </div>
             </div> 
             <div class="section3">
-                <div class="box3">
+                <div class="box4">
                     Income chart 
                     <div class="button2">
                         <button>
