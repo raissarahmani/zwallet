@@ -9,25 +9,15 @@ if (goToDashboard) {
     goToDashboard.addEventListener("click", (event) => {
         event.preventDefault()
         location.href = 'dashboard.html'
-        return 
+        return
     }) 
 }
-
-function mobileDashboard() {
-    if (window.innerWidth < 769) {
-        const dashboardIcon = document.querySelector("#dashboard-img")
-        dashboardIcon.src = 'dashboard2.png'
-        goToDashboard.style.color = '#2948FF'
-        return
-    }
-}
-mobileDashboard()
-
 
 if (goToTransfer) {
     goToTransfer.addEventListener("click", (event) => {
         event.preventDefault()
         location.href = 'transfer.html'
+        return
     }) 
 }
 
@@ -55,6 +45,16 @@ if (goToProfile) {
     }) 
 }
 
+function mobileProfile() {
+    if (window.innerWidth < 769) {
+        const profileIcon = document.querySelector("#profile-img")
+        profileIcon.src = '2 User2.png'
+        goToProfile.style.color = '#2948FF'
+        return
+    }
+}
+mobileProfile()
+
 dropdownBtn.addEventListener("click", (event) => {
     event.preventDefault()
 
@@ -66,4 +66,40 @@ dropdownBtn.addEventListener("click", (event) => {
     }
 })
 
-window.addEventListener("resize", mobileDashboard)
+window.addEventListener("resize", mobileProfile)
+
+const pinInputs = document.querySelectorAll(".pin")
+const btnSubmit = document.querySelector(".container-profile > button")
+const textMessage = document.querySelector("#text")
+
+btnSubmit.addEventListener("click", (event) => {
+    event.preventDefault()
+
+    textMessage.style.visibility = "hidden"
+    textMessage.textContent = ""
+
+    let pinValue = ""
+    pinInputs.forEach(input => {
+        pinValue += input.value
+    })
+
+    if (!pinValue) {
+        textMessage.style.visibility = "visible"
+        textMessage.textContent = "Enter 6 digits pin"
+        textMessage.style.color = "red"
+        return
+    }
+
+    const pinRegex = /^\d{6}$/
+    if (!pinRegex.test(pinValue)) {
+        textMessage.style.visibility = "visible"
+        textMessage.textContent = "Pin should be 6 digits"
+        textMessage.style.color = "red"
+        return
+    }
+
+    textMessage.style.visibility = "visible"
+    textMessage.textContent = "Login success"
+    textMessage.style.color = "green"
+    location.href = "profileedit.html"
+})

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="profile.css">
+    <script src="profile.js" defer></script>
     <title>Zwallet - Profile</title>
 </head>
 <body>
@@ -28,24 +29,24 @@
     </header>
     <main>
         <aside>
-            <div class="option2">
+            <div class="option2" id="dashboard">
                 <img src="dashboard.png">
                 Dashboard
             </div>
-            <div class="option2">
+            <div class="option2" id="transfer">
                 <img src="Send.png">
                 Transfer
             </div>
-            <div class="option2">
+            <div class="option2" id="history">
                 <img src="history.png">
                 History
             </div>
-            <div class="option2">
+            <div class="option2" id="topup">
                 <img src="Upload.png">
                 Top Up
             </div>
-            <div class="option1">
-                <img src="2 User.png">
+            <div class="option1" id="profile">
+                <img src="2 User.png" id="profile-img">
                 Profile
             </div>
             <div class="option3">
@@ -78,22 +79,42 @@
                     </div>
                     <p>The profile picture must be 512 x 512 pixels or less</p>
                 </div>
-                <div class="text2">
+                <div class="text2"> 
                     <form action="profile.html" method="post">
                         <label for="name">Full Name</label> <br>
-                        <input type="text" name="name" id="name" placeholder="Enter Full Name"> <br>
+                        <div class="inputs-name">
+                            <img src="User4.png" class="icon">
+                            <input type="text" name="name" id="name" placeholder="Enter Full Name"> 
+                        </div>
                         <label for="phone">Phone</label> <br>
-                        <input type="number" name="phone" id="phone" placeholder="Enter Your Number Phone"> <br>
+                        <div class="inputs-phone">
+                            <img src="Phone3.png" class="icon">
+                            <input type="number" name="phone" id="phone" placeholder="Enter Your Number Phone">
+                        </div>
                         <label for="email">Email</label> <br>
-                        <input type="text" name="email" id="email" placeholder="Enter Your Email"> <br>
+                        <div class="inputs-email">
+                            <img src="email.png" class="icon">
+                            <input type="text" name="email" id="email" placeholder="Enter Your Email"> 
+                        </div>
                     </form>
                     <p class="line2">Password</p>
                     <p class="line3"><a href="profilepass.html">Change Password</a></p>
                     <p class="line2">Pin</p>
                     <p class="line3"><a href="profilepin.html">Change Pin</a></p>
-                    <button>Submit</button>
+                    <p class="line2" id="text" style="visibility: hidden;">Profile updated</p>
+                    <button type="button">Submit</button>
                 </div>
             </div>   
+        </section>
+        <section class="dropdown" style="visibility: hidden;">
+            <div class="dropdown1">
+                <img src="user2.png">
+                Profile
+            </div>
+            <div class="dropdown2">
+                <img src="Log Out.png">
+                Keluar
+            </div>
         </section>
     </main>
 </body>

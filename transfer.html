@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="transfer.css">
+    <script src="transfer.js" defer></script>
     <title>Zwallet - Transfer</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
                 Dashboard
             </div>
             <div class="option1" id="transfer">
-                <img src="Send2.png">
+                <img src="Send2.png" id="transfer-img">
                 Transfer
             </div>
             <div class="option2" id="history">
@@ -91,7 +92,9 @@
                             <p class="line4">Ghaluh 1</p>
                             <p class="line5">(239) 555-0108</p>
                         </div>
-                        <img src="Star2.png">
+                        <div class="img">
+                            <img src="Star2.png">
+                        </div>
                     </div>
                     <div class="container-log2">
                         <div class="container-imglog">
@@ -101,7 +104,9 @@
                             <p class="line4">Ghaluh 2</p>
                             <p class="line5">(480) 555-0103</p>
                         </div>
-                        <img src="Star2.png">
+                        <div class="img">
+                            <img src="Star2.png">
+                        </div>
                     </div>
                     <div class="container-log1">
                         <div class="container-imglog">
@@ -111,7 +116,9 @@
                             <p class="line4">Ghaluh 3</p>
                             <p class="line5">(225) 555-0118</p>
                         </div>
-                        <img src="Star2.png">
+                        <div class="img">
+                            <img src="Star2.png">
+                        </div>
                     </div>
                     <div class="container-log2">
                         <div class="container-imglog">
@@ -121,7 +128,9 @@
                             <p class="line4">Ghaluh 4</p>
                             <p class="line5">(406) 555-0120</p>
                         </div>
-                        <img src="Star2.png">
+                        <div class="img">
+                            <img src="Star2.png">
+                        </div>
                     </div>
                     <div class="container-log1">
                         <div class="container-imglog">
@@ -131,7 +140,9 @@
                             <p class="line4">Ghaluh 5</p>
                             <p class="line5">(303) 555-0105</p>
                         </div>
-                        <img src="Star2.png">
+                        <div class="img">
+                            <img src="Star2.png">
+                        </div>
                     </div>
                     <div class="container-log2">
                         <div class="container-imglog">
@@ -141,17 +152,21 @@
                             <p class="line4">Ghaluh 6</p>
                             <p class="line5">(808) 555-0111</p>
                         </div>
-                        <img src="Star2.png">
+                        <div class="img">
+                            <img src="Star2.png">
+                        </div>
                     </div>
                     <div class="container-log1">
                         <div class="container-imglog">
                             <img src="ghaluh7.png">
                         </div>
                         <div class="text4-1">
-                            <td class="line4">Ghaluh 7</td>
-                            <td class="line5">(671) 555-0110</td>
+                            <p class="line4">Ghaluh 7</p>
+                            <p class="line5">(671) 555-0110</p>
                         </div>
-                        <img src="Star2.png">
+                        <div class="img">
+                            <img src="Star2.png">
+                        </div>
                     </div>
                     <div class="container-log2">
                         <div class="container-imglog">
@@ -161,11 +176,13 @@
                             <p class="line4">Ghaluh 8</p>
                             <p class="line5">(270) 555-0117</p>
                         </div>
-                        <img src="Star2.png">
+                        <div class="img">
+                            <img src="Star2.png">
+                        </div>
                     </div>
                 </div>
         </section>
-        <!-- <section class="dropdown">
+        <section class="dropdown" style="visibility: hidden;">
             <div class="dropdown1">
                 <img src="user2.png">
                 Profile
@@ -174,6 +191,6 @@
                 <img src="Log Out.png">
                 Keluar
             </div>
-        </section> -->
+        </section>
     </main>
 </body>

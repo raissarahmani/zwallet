@@ -3,6 +3,7 @@ const goToTransfer = document.querySelector("#transfer")
 const goToHistory = document.querySelector("#history")
 const goToTopup = document.querySelector("#topup")
 const goToProfile = document.querySelector("#profile")
+const dropdownBtn = document.querySelector("#dropdown")
 
 if (goToDashboard) {
     goToDashboard.addEventListener("click", (event) => {
@@ -28,6 +29,16 @@ if (goToHistory) {
     }) 
 }
 
+function mobileHistory() {
+    if (window.innerWidth < 769) {
+        const historyIcon = document.querySelector("#history-img")
+        historyIcon.src = 'history3.png'
+        goToHistory.style.color = '#2948FF'
+        return
+    }
+}
+mobileHistory()
+
 if (goToTopup) {
     goToTopup.addEventListener("click", (event) => {
         event.preventDefault()
@@ -43,3 +54,16 @@ if (goToProfile) {
         return
     }) 
 }
+
+dropdownBtn.addEventListener("click", (event) => {
+    event.preventDefault()
+
+    const menu = document.querySelector(".dropdown")
+    if (menu.style.visibility === 'visible') {
+        menu.style.visibility = 'hidden'
+    } else {
+        menu.style.visibility = 'visible'
+    }
+})
+
+window.addEventListener("resize", mobileHistory)

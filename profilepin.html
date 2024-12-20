@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="profilepin.css">
+    <script src="profilepin.js" defer></script>
     <title>Zwallet - Profile</title>
 </head>
 <body>
@@ -28,23 +29,23 @@
     </header>
     <main>
         <aside>
-            <div class="option2">
+            <div class="option2" id="dashboard">
                 <img src="dashboard.png">
                 Dashboard
             </div>
-            <div class="option2">
+            <div class="option2" id="transfer">
                 <img src="Send.png">
                 Transfer
             </div>
-            <div class="option2">
+            <div class="option2" id="history">
                 <img src="history.png">
                 History
             </div>
-            <div class="option2">
+            <div class="option2" id="topup">
                 <img src="Upload.png">
                 Top Up
             </div>
-            <div class="option1">
+            <div class="option1" id="profile">
                 <img src="2 User.png">
                 Profile
             </div>
@@ -67,15 +68,34 @@
                         Please save your pin because this so important.
                     </p>
                     <div class="line4">
-                        <p class="pin1">1</p>
-                        <p class="pin2"> </p>
-                        <p class="pin2"> </p>
-                        <p class="pin2"> </p>
-                        <p class="pin2"> </p>
-                        <p class="pin2"> </p>
+                        <form action="pin.html" method="post">
+                            <label for="digit1" hidden></label>
+                            <input type="password" name="digit1" class="pin" maxlength="1" placeholder="1">
+                            <label for="digit2" hidden></label>
+                            <input type="password" name="digit2" class="pin" maxlength="1">
+                            <label for="digit3" hidden></label>
+                            <input type="password" name="digit3" class="pin" maxlength="1">
+                            <label for="digit4" hidden></label>
+                            <input type="password" name="digit4" class="pin" maxlength="1">
+                            <label for="digit5" hidden></label>
+                            <input type="password" name="digit5" class="pin" maxlength="1">
+                            <label for="digit6" hidden></label>
+                            <input type="password" name="digit6" class="pin" maxlength="1">
+                        </form>
                     </div>
                 </div>
-                <button>Submit</button>
+                <p id="text" style="visibility: hidden;">Pin salah</p>
+                <button type="button">Submit</button>
+            </div>
+        </section>
+        <section class="dropdown" style="visibility: hidden;">
+            <div class="dropdown1">
+                <img src="user2.png">
+                Profile
+            </div>
+            <div class="dropdown2">
+                <img src="Log Out.png">
+                Keluar
             </div>
         </section>
     </main>

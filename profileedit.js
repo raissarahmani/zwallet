@@ -9,25 +9,15 @@ if (goToDashboard) {
     goToDashboard.addEventListener("click", (event) => {
         event.preventDefault()
         location.href = 'dashboard.html'
-        return 
+        return
     }) 
 }
-
-function mobileDashboard() {
-    if (window.innerWidth < 769) {
-        const dashboardIcon = document.querySelector("#dashboard-img")
-        dashboardIcon.src = 'dashboard2.png'
-        goToDashboard.style.color = '#2948FF'
-        return
-    }
-}
-mobileDashboard()
-
 
 if (goToTransfer) {
     goToTransfer.addEventListener("click", (event) => {
         event.preventDefault()
         location.href = 'transfer.html'
+        return
     }) 
 }
 
@@ -55,6 +45,16 @@ if (goToProfile) {
     }) 
 }
 
+function mobileProfile() {
+    if (window.innerWidth < 769) {
+        const profileIcon = document.querySelector("#profile-img")
+        profileIcon.src = '2 User2.png'
+        goToProfile.style.color = '#2948FF'
+        return
+    }
+}
+mobileProfile()
+
 dropdownBtn.addEventListener("click", (event) => {
     event.preventDefault()
 
@@ -66,4 +66,4 @@ dropdownBtn.addEventListener("click", (event) => {
     }
 })
 
-window.addEventListener("resize", mobileDashboard)
+window.addEventListener("resize", mobileProfile)

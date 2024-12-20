@@ -3,7 +3,7 @@ const goToTransfer = document.querySelector("#transfer")
 const goToHistory = document.querySelector("#history")
 const goToTopup = document.querySelector("#topup")
 const goToProfile = document.querySelector("#profile")
-const dropdownMenu = document.querySelector(".dropdown")
+const dropdownBtn = document.querySelector("#dropdown")
 
 if (goToDashboard) {
     goToDashboard.addEventListener("click", (event) => {
@@ -20,6 +20,16 @@ if (goToTransfer) {
         return
     }) 
 }
+
+function mobileTf() {
+    if (window.innerWidth < 769) {
+        const tfIcon = document.querySelector("#transfer-img")
+        tfIcon.src = 'Send3.png'
+        goToTransfer.style.color = '#2948FF'
+        return
+    }
+}
+mobileTf()
 
 if (goToHistory) {
     goToHistory.addEventListener("click", (event) => {
@@ -45,9 +55,15 @@ if (goToProfile) {
     }) 
 }
 
-if (dropdownMenu) {
-    dropdownMenu.addEventListener("click", (event) => {
-        event.preventDefault()
-        dropdownMenu.style.visibility = "visible"
-    })
-}
+dropdownBtn.addEventListener("click", (event) => {
+    event.preventDefault()
+
+    const menu = document.querySelector(".dropdown")
+    if (menu.style.visibility === 'visible') {
+        menu.style.visibility = 'hidden'
+    } else {
+        menu.style.visibility = 'visible'
+    }
+})
+
+window.addEventListener("resize", mobileTf)
