@@ -3,7 +3,6 @@ const goToTransfer = document.querySelector("#transfer")
 const goToHistory = document.querySelector("#history")
 const goToTopup = document.querySelector("#topup")
 const goToProfile = document.querySelector("#profile")
-const dropdownBtn = document.querySelector("#dropdown")
 
 if (goToDashboard) {
     goToDashboard.addEventListener("click", (event) => {
@@ -55,24 +54,15 @@ if (goToProfile) {
     }) 
 }
 
-dropdownBtn.addEventListener("click", (event) => {
-    event.preventDefault()
-
-    const menu = document.querySelector(".dropdown")
-    if (menu.style.visibility === 'visible') {
-        menu.style.visibility = 'hidden'
-    } else {
-        menu.style.visibility = 'visible'
-    }
-})
-
 window.addEventListener("resize", mobileTf)
 
-const selectReceiver = document.querySelector(".container-log1")
-if (selectReceiver) {
-    selectReceiver.addEventListener("click", (event) => {
-        event.preventDefault()
-        location.href = 'transfer2.html'
-        return
-    }) 
-}
+const popupShadow = document.querySelector(".shadow")
+const popupEl = document.querySelector(".popup")
+
+window.addEventListener("click", (event) => {
+    if (!popupEl.contains(event.target)) {
+        popupShadow.style.visibility = "hidden"
+        popupEl.style.visibility = "hidden"
+        window.location.href = "transfer2.html"
+    }
+})

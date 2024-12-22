@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="topup.css">
+    <script src="topup.js" defer></script>
     <title>Zwallet - Top Up</title>
 </head>
 <body>
@@ -27,23 +28,23 @@
     </header>
     <main>
         <aside>
-            <div class="option2">
+            <div class="option2" id="dashboard">
                 <img src="dashboard.png">
                 Dashboard
             </div>
-            <div class="option2">
+            <div class="option2" id="transfer">
                 <img src="Send.png">
                 Transfer
             </div>
-            <div class="option2">
+            <div class="option2" id="history">
                 <img src="history.png">
                 History
             </div>
-            <div class="option1">
-                <img src="Upload.png">
+            <div class="option1" id="topup">
+                <img src="Upload.png" id="topup-img">
                 Top Up
             </div>
-            <div class="option2">
+            <div class="option2" id="profile">
                 <img src="2 User.png">
                 Profile
             </div>
@@ -78,57 +79,62 @@
                     <div class="text2-1">Amount</div>
                     <p>Type the amount you want to transfer to your e-wallet account</p>
                     <div class="text3-1">
-                        <form action="transfer2.html" method="post">
-                            <input type="number" name="nominal" id="nominal" placeholder="Enter Nominal Transfer">
+                        <form action="topup.html" method="post">
+                            <div class="inputs-nominal">
+                                <img src="money3.png" class="icon">
+                                <input type="number" name="nominal" id="nominal" placeholder="Enter Nominal Transfer">
+                            </div>
                             <label for="nominal" hidden></label>
                         </form>
+                        <p id="text" style="visibility: hidden">Fill data</p>
                     </div>
                 </div>
                 <div class="text3">
                     <div class="text2-1">Payment Method</div>
                     <p>Choose your payment method for top up account</p>
-                    <div class="text3-2">
-                        <form action="topup.html" method="post">
-                            <input type="radio" name="bri">
+                    <form action="topup.html" method="post">
+                        <div class="bank-option">
+                            <input type="radio" name="bank">
                             <label for="bri" hidden></label>
                             <div class="bank1">
                                 <img src="bri.png">
                             </div>
                             <p class="bank2">Bank Rakyat Indonesia</p>
-                        </form>
-                        <form action="topup.html" method="post">
-                            <input type="radio" name="dana">
+                        </div>
+                        <div class="bank-option">
+                            <input type="radio" name="bank">
                             <label for="dana" hidden></label>
                             <div class="bank1">
                                 <img src="dana.png">
                             </div>
                             <p class="bank2">Dana</p>
-                        </form>
-                        <form action="topup.html" method="post">
-                            <input type="radio" name="bca">
+                        </div>
+                        <div class="bank-option">
+                            <input type="radio" name="bank">
                             <label for="bca" hidden></label>
                             <div class="bank1">
                                 <img src="bca.png">
                             </div>
                             <p class="bank2">Bank Central Asia</p>
-                        </form>
-                        <form action="topup.html" method="post">
-                            <input type="radio" name="gopay">
+                        </div>
+                        <div class="bank-option">
+                            <input type="radio" name="bank">
                             <label for="gopay" hidden></label>
                             <div class="bank1">
                                 <img src="gopay.png">
                             </div>
                             <p class="bank2">Gopay</p>
-                        </form>
-                        <form action="topup.html" method="post">
-                            <input type="radio" name="ovo">
+                        </div>
+                        <div class="bank-option">
+                            <input type="radio" name="bank">
                             <label for="ovo" hidden></label>
                             <div class="bank1">
                                 <img src="ovo.png">
                             </div>
                             <p class="bank2">Ovo</p>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
+                    <p id="text2" style="visibility: hidden">Fill data</p>
                 </div>
             </div>
         </section>
@@ -152,8 +158,18 @@
                 <p>Sub Total </p>
                 <p>Idr. 44.000</p>
             </div>
-            <button>Submit</button>
+            <button type="button">Submit</button>
             <p class="line2">*Get Discount if you pay with Bank Central Asia</p>
+        </section>
+        <section class="dropdown" style="visibility: hidden;">
+            <div class="dropdown1">
+                <img src="user2.png">
+                Profile
+            </div>
+            <div class="dropdown2">
+                <img src="Log Out.png">
+                Keluar
+            </div>
         </section>
     </main>
 </body>

@@ -21,6 +21,16 @@ if (goToTransfer) {
     }) 
 }
 
+function mobileTf() {
+    if (window.innerWidth < 769) {
+        const tfIcon = document.querySelector("#transfer-img")
+        tfIcon.src = 'Send3.png'
+        goToTransfer.style.color = '#2948FF'
+        return
+    }
+}
+mobileTf()
+
 if (goToHistory) {
     goToHistory.addEventListener("click", (event) => {
         event.preventDefault()
@@ -36,16 +46,6 @@ if (goToTopup) {
         return
     }) 
 }
-
-function mobileTopup() {
-    if (window.innerWidth < 769) {
-        const topupIcon = document.querySelector("#topup-img")
-        topupIcon.src = 'Upload2.png'
-        goToTopup.style.color = '#2948FF'
-        return
-    }
-}
-mobileTopup()
 
 if (goToProfile) {
     goToProfile.addEventListener("click", (event) => {
@@ -66,21 +66,20 @@ dropdownBtn.addEventListener("click", (event) => {
     }
 })
 
-window.addEventListener("resize", mobileTopup)
+window.addEventListener("resize", mobileTf)
 
-const amountTopup = document.querySelector("#nominal")
-const topupOption = document.querySelectorAll(".bank-option > input[name='bank']")
+const amountTf = document.querySelector("#nominal")
+const descTf = document.querySelector("#notes")
 const textMessage = document.querySelector("#text")
-const textMessage2 = document.querySelector("#text2")
-const btnTopup = document.querySelector(".payment > button")
+const btnTf = document.querySelector(".text4 > button")
 
-btnTopup.addEventListener("click", (event) => {
+btnTf.addEventListener("click", (event) => {
     event.preventDefault()
 
     textMessage.style.visibility = "hidden"
     textMessage.textContent = ""
 
-    if (!amountTopup.value) {
+    if (!amountTf.value) {
         textMessage.style.visibility = "visible"
         textMessage.textContent = "Enter transfer nominal"
         textMessage.style.color = "red"
@@ -88,32 +87,13 @@ btnTopup.addEventListener("click", (event) => {
     }
 
     const tfRegex = /^\d{5,}$/
-    if (!tfRegex.test(amountTopup.value)) {
+    if (!tfRegex.test(amountTf.value)) {
         textMessage.style.visibility = "visible"
         textMessage.textContent = "Minimum transfer Rp. 10000"
         textMessage.style.color = "red"
         return
     }
 
-    const bankOption = collectData()
-    if (!bankOption.bank) {
-        textMessage2.style.visibility = "visible"
-        textMessage2.textContent = "Choose payment method"
-        textMessage2.style.color = "red"
-        return
-    }
-
-    textMessage2.style.visibility = "visible"
-    textMessage2.textContent = "Topup success"
-    textMessage2.style.color = "green"
+    textMessage.style.visibility = "hidden"
+    location.href = "transfer3.html"
 })
-
-function collectData() {
-    const data = {}
-    topupOption.forEach(bank => {
-        if (bank.checked) {
-            data.bank = bank.value
-        }
-    })
-    return data
-}

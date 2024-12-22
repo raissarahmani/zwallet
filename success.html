@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="success.css">
+    <script src="success.js" defer></script>
     <title>Zwallet - Transfer Success</title>
 </head>
 <body>
@@ -27,23 +28,23 @@
     </header>
     <main>
         <aside>
-            <div class="option2">
+            <div class="option2" id="dashboard">
                 <img src="dashboard.png">
                 Dashboard
             </div>
-            <div class="option1">
+            <div class="option1" id="transfer">
                 <img src="Send2.png">
                 Transfer
             </div>
-            <div class="option2">
+            <div class="option2" id="history">
                 <img src="history.png">
                 History
             </div>
-            <div class="option2">
+            <div class="option2" id="topup">
                 <img src="Upload.png">
                 Top Up
             </div>
-            <div class="option2">
+            <div class="option2" id="profile">
                 <img src="2 User.png">
                 Profile
             </div>
@@ -108,7 +109,7 @@
                             <label for="notes" hidden></label>
                         </form>
                     </div>
-                    <button>Submit & Transfer</button>
+                    <button type="button">Submit & Transfer</button>
                 </div>
             </div>
         </section>

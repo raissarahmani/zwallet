@@ -28,23 +28,23 @@
     </header>
     <main>
         <aside>
-            <div class="option2">
+            <div class="option2" id="dashboard">
                 <img src="dashboard.png">
                 Dashboard
             </div>
-            <div class="option1">
+            <div class="option1" id="transfer">
                 <img src="Send2.png">
                 Transfer
             </div>
-            <div class="option2">
+            <div class="option2" id="history">
                 <img src="history.png">
                 History
             </div>
-            <div class="option2">
+            <div class="option2" id="topup">
                 <img src="Upload.png">
                 Top Up
             </div>
-            <div class="option2">
+            <div class="option2" id="profile">
                 <img src="2 User.png">
                 Profile
             </div>
@@ -95,9 +95,13 @@
                     <p>Type the amount you want to transfer and then press continue to the next steps</p>
                     <div class="text4-1">
                         <form action="transfer2.html" method="post">
-                            <input type="number" name="nominal" id="nominal" placeholder="Enter Nominal Transfer">
+                            <div class="inputs-nominal">
+                                <img src="money3.png" class="icon">
+                                <input type="number" name="nominal" id="nominal" placeholder="Enter Nominal Transfer">
+                            </div>
                             <label for="nominal" hidden></label>
                         </form>
+                        <p id="text" style="visibility: hidden">Fill data</p>
                     </div>
                 </div>
                 <div class="text4">
@@ -109,7 +113,7 @@
                             <label for="notes" hidden></label>
                         </form>
                     </div>
-                    <button>Submit & Transfer</button>
+                    <button type="button">Submit & Transfer</button>
                 </div>
             </div>
             <section class="shadow"></section>
@@ -121,20 +125,21 @@
                     <div class="popup2-3">
                         <form action="pin.html" method="post">
                             <label for="digit1" hidden></label>
-                            <input type="number" name="digit1" class="pin" placeholder="1">
+                            <input type="password" name="digit1" class="pin" maxlength="1" placeholder="1">
                             <label for="digit2" hidden></label>
-                            <input type="number" name="digit2" class="pin">
+                            <input type="password" name="digit2" class="pin" maxlength="1">
                             <label for="digit3" hidden></label>
-                            <input type="number" name="digit3" class="pin">
+                            <input type="password" name="digit3" class="pin" maxlength="1">
                             <label for="digit4" hidden></label>
-                            <input type="number" name="digit4" class="pin">
+                            <input type="password" name="digit4" class="pin" maxlength="1">
                             <label for="digit5" hidden></label>
-                            <input type="number" name="digit5" class="pin">
+                            <input type="password" name="digit5" class="pin" maxlength="1">
                             <label for="digit6" hidden></label>
-                            <input type="number" name="digit6" class="pin">
+                            <input type="password" name="digit6" class="pin" maxlength="1">
                         </form>
                     </div>
-                    <button>Next</button>
+                    <p id="text2" style="visibility: hidden;">Enter pin</p>
+                    <button type="button">Next</button>
                     <div class="popup2-4">
                         Forgot Your Pin?
                         <a href="forgotpass.html">Reset</a>
